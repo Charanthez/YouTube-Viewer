@@ -109,3 +109,21 @@ Simple program to increase YouTube views written in Python. Works with live stre
 
 # Credits
  I want to thank all of you who have opened an issue or shared your code snippets or ideas with me! 
+
+### Tags
+- youtube
+- bots
+- youtube-video
+- proxies
+- youtube-viewer
+- python-bot
+- youtube-stream
+- youtube-livestream
+- youtube-live
+- youtube-bot
+- selenium-bot
+- viewbot
+- youtube-views
+- youtube-view-bot
+- selenium-youtube
+- chromedrivers
